@@ -1,0 +1,18 @@
+{
+  "name": "showcases",
+  "version": "1.0.0",
+  "description": "This package will store some e-toast showcases.",
+  "main": "index.js",
+  "dependencies": {
+    "@e-toast/css": "latest",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "author": "",
+  "license": "ISC"
+}
