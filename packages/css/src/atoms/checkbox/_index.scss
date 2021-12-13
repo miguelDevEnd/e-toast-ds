@@ -8,7 +8,7 @@
     width: tokens.$size;
     height: tokens.$size;
     margin: 0;
-    
+
     &:after {
         display: inline-block;
         border: 1px solid tokens.$main-color;
@@ -32,14 +32,23 @@
         background-color: none;
         cursor: not-allowed;
     }
-      
+
     &:checked:after {
         content: "\2713";
         background-color: tokens.$main-color;
+        // background-color: tokens.$disabled-color;
         color: tokens.$checkmark-color;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &:checked:disabled:after {
+        background-color: tokens.$disabled-color;
+    }
+
+    &:checked:after + &:disabled:after {
+        background-color: tokens.$disabled-color;
     }
 
     &__label {
@@ -53,7 +62,7 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        
+
         &--disabled {
             color: tokens.$disabled-color;
             cursor: not-allowed;

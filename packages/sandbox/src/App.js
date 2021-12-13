@@ -308,6 +308,7 @@ function App() {
           <Checkbox label="Labeled checkbox" />
           <Checkbox label="Controlled checkbox" checked readOnly/>
           <Checkbox label="Disabled checkbox" disabled/>
+          <Checkbox label="Disabled checkbox with icon" checked disabled/>
         </List>
       </section>
       <section>
